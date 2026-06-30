@@ -1,0 +1,11 @@
+//| mill-version: 1.2.0-RC1-24-042146
+
+package build
+
+import mill._, mill.kotlinlib._
+
+object foo extends KotlinModule {
+  def kotlinVersion = "2.3.21"
+  def kotlincUseBtApi = true
+  def kotlinUseEmbeddableCompiler = true
+}
